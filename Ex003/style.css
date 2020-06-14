@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #2728FF;
+    --bg-color: #0d0e13;
+    --text-color: #f4f4f5;   
+    
+}
+
+img {
+    width: 100px;
+    padding-bottom: 7px;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    background: rgba(255, 255, 255, 0.03);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 32px auto;
+    padding: 32px 64px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+
+input, 
+button {
+    /* Reser appearance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* BOX */
+    width: 100%;
+    padding: 16px 0;
+
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    /* TExT */
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: .4s;
+
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+#res{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 500px;
+    margin: auto;
+
+}

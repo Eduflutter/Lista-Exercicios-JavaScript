@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+
+    <title>Contador</title>
+</head>
+<body>
+    
+    <section>
+        <p><img src="logo.png" alt="logo"></p>
+        <h2>
+            Vamos Contar <label>&#9757;</label>
+        </h2>
+        
+
+        <div class="input">
+            <input type="text" required id="ini" >
+            <label>Inicio</label>
+        </div>
+
+        <div class="input"  >
+            <input type="text" required id="fim">
+            <label>Fim</label>
+        </div>
+
+        <div class="input">
+            <input type="text" required id="pas">
+            <label>Passos</label>
+        </div>
+
+        <button type="button" onclick="Enviar()">Contar</button>
+    </section>
+    <div id="res">
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

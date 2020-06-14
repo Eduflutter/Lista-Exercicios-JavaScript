@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDN</title>
+
+    <style>
+        body {
+            background-color: rgb(97, 93, 93);
+            color: white;
+            font: normal 20pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Nascionalidade</h1>
+    Favor digite o pais de horigem: <input type="text" name="txtns" id="txtns">
+    <input type="button" value="Verificador" onclick="vefi()">
+    <p id="res">VERIFICANDO....</p>
+
+    <script>
+        function vefi() {
+            var ns = document.getElementById('txtns')
+            var res = document.getElementById('res')
+            var nsi = String(ns.value)
+            if (nsi == "Br"){
+                res.innerText = `Você está liberado para o acesso !`
+            }else {
+                res.innerText = `Você é estrangeiro favor ir para o cetor de triagem imediatamente!`            }
+        }
+    </script>
+
+
+</body>
+</html>

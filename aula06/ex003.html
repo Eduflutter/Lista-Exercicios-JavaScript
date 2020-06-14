@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color:blueviolet ;
+            color: white;
+            font: normal 20pt Arial;
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Testando a página </h1>
+    <p>Teste de veficação de página</p>
+    
+    <script>
+        var n1 = Number(prompt('Digite o primeiro número'))//string
+        var n2 = Number(prompt('Digite o segundo número'))
+        var soma = n1 + n2
+        alert(`A soma entre ${n1} e ${n2} = ${soma}`)//Concatenação
+        document.write(`O valor da soma em reais é: R$ ${soma.toLocaleString('pt-BR',{style:'corrency', corrency:'BRL'})}`)
+        //(number + number) para adição
+        //(string + string ) para concatenar 
+
+    </script>
+</body>
+</html>
